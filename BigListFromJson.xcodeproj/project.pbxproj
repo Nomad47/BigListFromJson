@@ -13,9 +13,14 @@
 		4DD0382522E8B65B003D5B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0382422E8B65B003D5B6F /* Assets.xcassets */; };
 		4DD0382822E8B65B003D5B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0382722E8B65B003D5B6F /* Preview Assets.xcassets */; };
 		4DD0382B22E8B65B003D5B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0382922E8B65B003D5B6F /* LaunchScreen.storyboard */; };
+		4DD0383322E8B6D6003D5B6F /* PokemonAPIList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0383222E8B6D6003D5B6F /* PokemonAPIList.swift */; };
+		4DD0383522E8B77B003D5B6F /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0383422E8B77B003D5B6F /* NetworkingManager.swift */; };
+		7F2970961784B1380B3C8086 /* Pods_BigListFromJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4220DBD0082677DD245132 /* Pods_BigListFromJson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026E6FF4FDEBD1073A0100BD /* Pods-BigListFromJson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigListFromJson.release.xcconfig"; path = "Target Support Files/Pods-BigListFromJson/Pods-BigListFromJson.release.xcconfig"; sourceTree = "<group>"; };
+		1943EFC3F78DF84DA957AD63 /* Pods-BigListFromJson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigListFromJson.debug.xcconfig"; path = "Target Support Files/Pods-BigListFromJson/Pods-BigListFromJson.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD0381B22E8B658003D5B6F /* BigListFromJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigListFromJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD0381E22E8B658003D5B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD0382022E8B658003D5B6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		4DD0382722E8B65B003D5B6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DD0382A22E8B65B003D5B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD0382C22E8B65B003D5B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD0383222E8B6D6003D5B6F /* PokemonAPIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIList.swift; sourceTree = "<group>"; };
+		4DD0383422E8B77B003D5B6F /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		6A4220DBD0082677DD245132 /* Pods_BigListFromJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigListFromJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2970961784B1380B3C8086 /* Pods_BigListFromJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +49,12 @@
 		4DD0381222E8B658003D5B6F = {
 			isa = PBXGroup;
 			children = (
+				4DD0383222E8B6D6003D5B6F /* PokemonAPIList.swift */,
+				4DD0383422E8B77B003D5B6F /* NetworkingManager.swift */,
 				4DD0381D22E8B658003D5B6F /* BigListFromJson */,
 				4DD0381C22E8B658003D5B6F /* Products */,
+				A79456BEE1E316A99F0E5B7B /* Pods */,
+				8BC312D052B98248C1D1910D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +88,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8BC312D052B98248C1D1910D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A4220DBD0082677DD245132 /* Pods_BigListFromJson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A79456BEE1E316A99F0E5B7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1943EFC3F78DF84DA957AD63 /* Pods-BigListFromJson.debug.xcconfig */,
+				026E6FF4FDEBD1073A0100BD /* Pods-BigListFromJson.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DD0382F22E8B65B003D5B6F /* Build configuration list for PBXNativeTarget "BigListFromJson" */;
 			buildPhases = (
+				33E85961F3423BFC77D06E11 /* [CP] Check Pods Manifest.lock */,
 				4DD0381722E8B658003D5B6F /* Sources */,
 				4DD0381822E8B658003D5B6F /* Frameworks */,
 				4DD0381922E8B658003D5B6F /* Resources */,
+				1DA71E6D28779F04D786F943 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +174,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DA71E6D28779F04D786F943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BigListFromJson/Pods-BigListFromJson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BigListFromJson/Pods-BigListFromJson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BigListFromJson/Pods-BigListFromJson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E85961F3423BFC77D06E11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigListFromJson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DD0381722E8B658003D5B6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +223,8 @@
 			files = (
 				4DD0381F22E8B658003D5B6F /* AppDelegate.swift in Sources */,
 				4DD0382122E8B658003D5B6F /* SceneDelegate.swift in Sources */,
+				4DD0383322E8B6D6003D5B6F /* PokemonAPIList.swift in Sources */,
+				4DD0383522E8B77B003D5B6F /* NetworkingManager.swift in Sources */,
 				4DD0382322E8B658003D5B6F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +359,7 @@
 		};
 		4DD0383022E8B65B003D5B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1943EFC3F78DF84DA957AD63 /* Pods-BigListFromJson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +380,7 @@
 		};
 		4DD0383122E8B65B003D5B6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026E6FF4FDEBD1073A0100BD /* Pods-BigListFromJson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

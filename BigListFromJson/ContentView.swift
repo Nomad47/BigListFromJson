@@ -9,11 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello World")
+    
+    @State var networkingManager = NetworkingManager()
+        var body: some View {
+            // MARK: -  Views
+            
+            NavigationView {
+                ScrollView {
+                    
+            ForEach(networkingManager.pokemonList.results, id: \.url) { pokemon in
+                                Text(pokemon.name.capitalized)
+                                }
+            }.navigationBarTitle(Text("List Of Pokemon"))
+                    .frame(width: 400, height: 400, alignment: .leading)
+                
+        }
     }
 }
-
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
